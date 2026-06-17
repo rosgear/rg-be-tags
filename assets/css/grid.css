@@ -1,0 +1,23 @@
+/*!
+ * Сетка (Grid).
+ * 
+ * Модуль "Менеджер меток материала".
+ *
+ * Copyright 2015 RosGear
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://rosgear.ru/license/
+ */
+
+/* Заливка заднего фона сетки (см. идент. viewManager) */
+#rg-tags-grid .x-grid-view {
+    background: url("../images/watermark.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px; }
+
+
+/**
+ * Столбцы сетки.
+ */
+/* Значок "Количество просмотров" */
+.rg-tags__icon-hits { background-image: url("../images/icon-hits.svg"); }
+/* Значок "Количество материала" */
+.rg-tags__icon-articles { background-image: url("../images/icon-articles.svg"); }
