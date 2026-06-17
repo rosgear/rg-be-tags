@@ -1,0 +1,28 @@
+<?php
+/**
+ * Страница "Форма добавления / редактирования метки".
+ * 
+ * Русская локализации.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Форма добавления / редактирования метки</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/form.png' ?>" />
+    </div>
+    <p>Форма появляется после нажатия на кнопку <b>"Добавить"</b> панели инструментов списка или выбора пункта <b>"Редактировать"</b> контекстного меню выбранной записи.</p>
+    <h2>Поля формы</h2>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Название.</b> Название метки;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Слаг.</b> Cлаг - это версия названия, уникальная часть URL-адреса. Это все строчные буквы и только буквы на латинице, цифры и дефисы;</li>
+        <li><span class="g-help-fld g-help-fld_textarea"></span> <b>Описание.</b> Описание метки;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Язык.</b> Язык указывается если на сайте есть несколько языков;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Переходов.</b> Количество переходов по метке;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Видимость.</b>Видимость метки на странице.</li>
+    </ul>
+</article>

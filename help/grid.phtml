@@ -1,0 +1,43 @@
+<?php
+/**
+ * Страница "Список меток".
+ * 
+ * Локализации по умолчанию.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>List of tags</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/grid.png' ?>" />
+    </div>
+    <p>The list displays all tags.</p>
+    <h2>List columns</h2>
+    <ul class="g-help-list">
+        <li><b>Name.</b> Tag name;</li>
+        <li><b>Slug.</b> A slug is a version of a name, a unique part of a URL. It is all lowercase and only Latin letters, numbers and hyphens.;</li>
+        <li><b>Description.</b> Description of the tag;</li>
+        <li><b>Language.</b> Language is specified if the site has several languages;</li>
+        <li><b>Hits.</b> Number of transitions by tag;</li>
+        <li><b>Articles.</b> Number of materials containing the label;</li>
+        <li><b>Visible.</b>Visibility of the label on the page.</li>
+    </ul>
+
+    <h2>Панель инструментов</h2>
+    <ul class="g-help-list">
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-add.svg' ?>" /> <b>Add.</b> Shows the form for adding a tag;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-delete.svg' ?>" /> <b>Delete.</b> Delete selected tags;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/cleanup.svg' ?>" /> <b>Clear.</b> Delete all tags;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-edit.svg' ?>" /> <b>Edit.</b> Shows the form for editing the tag;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-select.svg' ?>" /> <b>Select.</b> Selects or removes selection of tags;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/refresh.svg' ?>" /> <b>Refresh.</b> Refresh the list of tags;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-profiling-off.svg' ?>" /> <b>Record profiling.</b> Expands and collapses the Navigation Panel to display information for the selected tag;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/widgets/images/grid/grid-toggle-columns-off.svg' ?>" /> <b>Show.</b> Shows hidden columns;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/help.svg' ?>" /> <b>Help.</b> Shows the help window for the current list;</li>
+        <li><img class="g-help-icon" src="<?= $themeUrl, '/assets/icons/svg/basic/search.svg' ?>" /> <b>Search.</b> Shows the form for searching records in the list.</li>
+    </ul>
+</article>

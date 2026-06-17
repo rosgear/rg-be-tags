@@ -1,0 +1,28 @@
+<?php
+/**
+ * Страница "Форма добавления / редактирования метки".
+ * 
+ * Локализации по умолчанию.
+ * 
+ * Этот файл является частью модуля веб-приложения RosGear.
+ * 
+ * @copyright Copyright (c) 2015 RosGear
+ * @license https://rosgear.ru/license/
+ */
+?>
+<article>
+    <h1>Add / Edit tag form</h1>
+    <div class="g-help-screen g-help-screen--hidable">
+        <img src="<?= $assetsUrl, '/help/form.png' ?>" />
+    </div>
+    <p>The element editing form appears after clicking the <b>"Add"</b> button on the list toolbar or selecting the <b>"Edit"</b> item from the context menu of the selected record.</p>
+    <h2>Form fields</h2>
+    <ul class="g-help-list">
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Name.</b> Tag name;</li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Slug.</b> A slug is a version of a name, a unique part of a URL. It is all lowercase and only Latin letters, numbers and hyphens.;</li>
+        <li><span class="g-help-fld g-help-fld_textarea"></span> <b>Description.</b> Description of the tag;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Language.</b> Language is specified if the site has several languages;</li>
+        <li><span class="g-help-fld g-help-fld_spinner"></span> <b>Hits.</b> Number of transitions by tag;</li>
+        <li><span class="g-help-fld g-help-fld_checkbox"></span> <b>Visible.</b>Visibility of the label on the page.</li>
+    </ul>
+</article>
