@@ -1,0 +1,65 @@
+[
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "name": "name",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textarea",
+        "fieldLabel": "#Description",
+        "name": "desc",
+        "height": 40,
+        "anchor": "100%"
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Slug",
+        "tooltip": "#A slug is a version of the title, a unique part of the URL. It is all lowercase and only Latin letters, numbers, and hyphens. If not specified, it will be created automatically from the name.",
+        "name": "slug",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "g-field-combobox",
+        "fieldLabel": "#Language",
+        "name": "language",
+        "width": 330,
+        "hiddenName": "language",
+        "store": {
+            "fields": ["id", "name"],
+            "proxy": {
+                "type": "ajax",
+                "url": ["@backend/languages/trigger/combo"],
+                "extraParams": {"combo": "language"},
+                "reader": {
+                    "type": "array",
+                    "rootProperty": "data"
+                }
+            }
+        },
+        "displayField": "name",
+        "valueField": "id",
+        "editable": false,
+        "allowBlank": true
+    },
+    {
+        "xtype": "numberfield",
+        "fieldLabel": "#Hits",
+        "tooltip": "#Count of hits",
+        "name": "hits",
+        "minValue": 0,
+        "value": 0,
+        "width": 170
+    },
+    {
+        "xtype": "checkbox",
+        "fieldLabel": "#Visibility",
+        "name": "visible",
+        "ui": "switch",
+        "checked": true
+    }
+]
